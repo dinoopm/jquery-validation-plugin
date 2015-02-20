@@ -25,7 +25,7 @@ $("#signup-form").formValidate(
 	{attributeUsed:'data-formvalidate', // Custom html input attribute for giving form validation rules
 	triggerUsed:"change keyup",  // Trigger used for validating individual fields
 	scroll:true, // After form submission window will scroll to the first error message  
-	hideErrorOnChange:true, // Error messages shall be when use changes the value 
+	hideErrorOnChange:true, // Error messages shall be displayed when user changes the value 
 	skipHiddenFields:true //Excludes in hidden fields
 });
 
