@@ -1,0 +1,55 @@
+body{
+	background: #3498DB;
+}
+p{
+	margin: 0;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    display: inline-block;
+}
+.clearfix {
+    display: block;
+}
+.ui-form label,input{
+	display: block;
+	width: 95%;
+	padding: 8px 0 8px 0;
+}
+.ui-form h2{
+	margin: 10px 0;
+}
+.ui-form input{
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 10px;
+}	
+.ui-form button{
+	background: #3498DB;
+	color: #fff;
+	padding: 10px 20px;
+	border: 0px;
+	margin-top: 10px;
+
+}
+.signup-wrapper{
+	width: 500px;
+	background: #fff;
+	padding: 20px;
+	margin: 100px auto;
+	border-radius: 10px;
+}
+.error{
+  border: 1px solid red !important; 
+}
+.error-message{
+	color: red;
+	font-size: 14px;
+	padding: 2px 0;
+}
