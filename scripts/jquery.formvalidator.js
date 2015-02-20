@@ -1,7 +1,7 @@
 /**
  * Author: Dinoop Mathew
  * Date: 17/02/05
- * Description: Mcfayden assignment  
+ * Description: Validation plug-in
  */
 
 (function($) {
