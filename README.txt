@@ -25,23 +25,10 @@ $("#signup-form").formValidate(
 	{attributeUsed:'data-formvalidate', // Custom html input attribute for giving form validation rules
 	triggerUsed:"change keyup",  // Trigger used for validating individual fields
 	scroll:true, // After form submission window will scroll to the first error message  
-	hideErrorOnChange:true, // Error messages shall be displayed when user changes the value 
+	hideErrorOnChange:true, // Error messages shall be when use changes the value 
 	skipHiddenFields:true //Excludes in hidden fields
 });
 
-* How to add Asynchronous rules
- 
- -Below property shall enable Asynchronous rules.
-  
-  data-assync-pattern="true" 
-  
- -Below property and server url should be configure in the input field.  
- 
-  data-server-url="server.php"
-
-  Example
-
-   <input type="password" id="password" name="password" data-assync-pattern="true" data-server-url="server.php" >
  
 * How to configure custom message for the Asynchronous rules
  

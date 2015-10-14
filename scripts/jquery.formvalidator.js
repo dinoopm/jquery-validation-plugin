@@ -1,7 +1,6 @@
 /**
  * Author: Dinoop Mathew
  * Date: 17/02/05
- * Description: Validation plug-in
  */
 
 (function($) {
@@ -118,25 +117,6 @@
                     }
                 }
                 
-				/* checks if the field has assync-pattern */
-				
-                if ($(field).attr('data-assync-pattern')) {
-
-                    $.ajax({
-                        url: $(field).attr('data-server-url'),  
-                        async: false,
-                        data: $(field).attr("id"),
-                        success: function(data) {
-						
-                         var pattern = eval(data);
-						 
-							validForm = pattern.test($(field).val());
-							ruleName = 	$(field).attr("id");
-							
-                        }
-                    });		
-                };
-
                 if (!validForm) {
                     formValidate.util.renderErrorMsgs(this, ruleName);
                 } else {
@@ -201,7 +181,7 @@
 
         return this.each(function() {
             var $this = $(this);
-            var fieldsToValidate = $this.find("[" + opts.attributeUsed + "],[required],[data-assync-pattern='true']");
+            var fieldsToValidate = $this.find("[" + opts.attributeUsed + "],[required]");
 
             /* novalidate attribute is added to the form, if HTML5*/
             $this.attr("novalidate", "novalidate");
